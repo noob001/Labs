@@ -1,0 +1,13 @@
+[
+	uuid(48DE31B6-98C9-43BF-8F7E-78E239CF9E36),
+
+	version(1.0)
+]
+interface Lab1_Rpc
+{
+	int Log_in([in, string]  char * login, [in, string]  char * password, [in, string]  char * domain);
+	int Read_file([in, string] char * filename, [in] long offset, [out] char data[1024]);
+	int Write_file([in, string]  char * filename, [in]  char data[1024], [in] long count);
+	int Create_file([in, string]  char * filename);
+	int Delete_file([in, string]  char * filename);
+}

@@ -1,0 +1,6 @@
+[
+   implicit_handle(handle_t hLab1_rpcHandle)
+]
+interface Lab1_Rpc 
+{
+}
